@@ -5,8 +5,11 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 class WelcomeActivity : AppCompatActivity() {
     lateinit var nameUser: TextView
@@ -22,7 +25,8 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     private fun setUpViewsAndListener() {
-        val userName = "" // obtener el nombre de usuario de alguna manera y mostrarlo en nameUser
+        var userName = " " // obtener el nombre de usuario de alguna manera y mostrarlo en nameUser
+        
         nameUser.text = userName
         advance.setOnClickListener {
             //Agregar los pasos necesarios para manejar la persistencia

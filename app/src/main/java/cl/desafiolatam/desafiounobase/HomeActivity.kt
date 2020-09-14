@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var ageInput: TextInputEditText
     private lateinit var save: Button
     private lateinit var container: ConstraintLayout
-// para almacenar los datos en shared preferences utilice claves que contengan el nombre del usuario y el nombre de el campo guardado.
+    // para almacenar los datos en shared preferences utilice claves que contengan el nombre del usuario y el nombre de el campo guardado.
     //esta recomendación no aplica para todos los valores, pero ayuda con varios
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -99,7 +99,7 @@ class HomeActivity : AppCompatActivity() {
         val nicknameKey = ""
         val ageKey = ""
         if (nickNameInput.text!!.isNotEmpty()) {
-           //almacenar
+            //almacenar
         }
         if (ageInput.text!!.isNotEmpty()) {
             val ageInt = ageInput.text.toString().toInt()
